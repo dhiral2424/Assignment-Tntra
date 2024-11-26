@@ -12,7 +12,7 @@ string message = "Hello";
 
 bool isStudent = false;     
 
-// Output the variables
+
 Console.WriteLine("Age : " + age);
 Console.WriteLine("World Population : " + population);
 Console.WriteLine("Value of Pi : " + pi);
@@ -75,7 +75,7 @@ Console.WriteLine("Is Student : " + isStudent);
 
 
 
-Console.Write("Enter a number to calculate its factorial: ");
+
 int number =5; 
 long factorial = 1; 
 
@@ -85,3 +85,27 @@ for (int i = 1; i <= number; i++)
 }
 
 Console.WriteLine($"Factorial of {number} is: {factorial}");
+
+Console.Write("Enter a number to calculate the sum of its digits: ");
+int n1 = int.Parse(Console.ReadLine());
+
+int sum = 0;
+
+
+while (n1 > 0)
+{
+    sum += n1 % 10;  
+    n1 /= 10;         
+}
+
+Console.WriteLine("Sum of digits: " + sum);
+
+
+Console.Write("Enter a number to generate its multiplication table: ");
+int n2 = int.Parse(Console.ReadLine());
+
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"{n2} x {i} = {n2 * i}");
+}
